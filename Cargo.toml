@@ -6,3 +6,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# rawloader = "0.37"
+rawloader = { path = "../rawloader" }
+bayer = "0.1"
+minifb = "0.23.0"
+
+[dev-dependencies]
+png = "0.17.5"
+
+
+[profiles.dev]
+# otherwise really slow
+# uncomment for better debugging
+opt-level = 1
